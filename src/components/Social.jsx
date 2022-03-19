@@ -30,6 +30,8 @@ export default function Social() {
           display: "flex",
           justifyContent: "center",
           marginBottom: "30px",
+          fontSize: "25px",
+          letterSpacing: "0.15rem",
         }}
       >
         © 2022 BAPE | All rights reserved

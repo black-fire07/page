@@ -58,6 +58,8 @@
 
       text-transform: uppercase;
       font-weight: 800;
+      font-size: 20px;
+      letter-spacing: 0.15rem;
 
       transition: all 0.3s ease-in-out;
 
@@ -114,7 +116,8 @@
     flex-direction: column;
 
     // background: url();
-    background-color: var(--white-color);
+    color: white;
+    background-color: black;
     /* top box shadow */
     box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
 

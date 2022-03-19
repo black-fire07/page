@@ -197,7 +197,7 @@
   @media screen and (max-width: 1094px) {
     margin: 0 5rem;
     img {
-      width: 320px;
+      width: 305px;
     }
   }
 
@@ -230,23 +230,28 @@
   }
 
   p {
-    font-size: 20px;
+    font-size: 25px;
     letter-spacing: 0.2rem;
   }
   button {
-    letter-spacing: 0.13rem;
+    letter-spacing: 0.2rem !important;
     margin-right: 20px;
     border-radius: 30px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
     padding: 10px;
+    font-size: 15px;
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 
 h1 {
-  font-weight: 900;
+  font-weight: 400;
   font-size: 60px;
   letter-spacing: 0.2rem;
+  font-family: "Stint Ultra Expanded", cursive;
+  font-family: "Teko", sans-serif;
+  font-family: "Ultra", serif;
 }
 
 .left {
@@ -262,11 +267,7 @@ h1 {
 }
 
 #TOKENOMICS {
-  margin: auto 15rem;
-
-  @media screen and (max-width: 1094px) {
-    margin: 0 5rem;
-  }
+  margin: auto 5rem;
 
   @media screen and (max-width: 660px) {
     margin: 25px;
@@ -284,21 +285,21 @@ h1 {
   }
 
   p {
-    font-size: 15px;
-    letter-spacing: 0.1rem;
+    font-size: 20px;
+    letter-spacing: 0.15rem;
     margin: 6px auto;
   }
   .boxes {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 45px;
-    margin-bottom: 40px;
+    margin: 40px;
   }
   .buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-left: 30%;
 
     button {
       margin: 40px;
@@ -306,7 +307,7 @@ h1 {
       padding: 10px;
       padding-left: 40px;
       padding-right: 40px;
-      letter-spacing: 0.13rem;
+      letter-spacing: 0.2rem;
     }
   }
   .icon {
@@ -317,6 +318,7 @@ h1 {
     padding: 2rem;
     text-align: center;
     border-radius: 10px;
+    margin: 20px;
 
     p {
       font-size: 25px;
@@ -359,7 +361,6 @@ h1 {
   .phase {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 100%;
 
     div {
@@ -368,6 +369,7 @@ h1 {
       // flex-direction: column;
       p {
         margin: 5px auto;
+        font-size: 20px;
         letter-spacing: 0.15rem;
       }
     }
@@ -444,23 +446,48 @@ h1 {
 }
 
 .c {
-  border-color: #114c86;
+  border-color: #ea3cb9;
   border-style: solid;
   border-width: 1px;
   padding: 1px 7px 2px;
   text-rendering: auto;
-  color: #114c86;
+  color: #ea3cb9;
   background-color: transparent;
   display: inline-block;
+
   text-align: start;
   margin: 0em;
+  text-shadow: 0 0 3px #ea3cb9, 0 0 4px #ea3cb9, 0 0 6px #ea3cb9,
+    0 0 8px #ea3cb9;
   cursor: pointer;
 }
 
+.newstyle {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1140px) {
+  .newstyle {
+    flex-direction: column;
+  }
+  .buttons {
+    margin: auto !important;
+  }
+}
+
 /* Active */
+Button:hover,
 .c:hover {
-  border-color: #134ed1;
-  color: #134ed1;
+  background-image: linear-gradient(
+    to right,
+    rgba(247, 155, 232, 0.1),
+    rgba(252, 42, 242, 0.4)
+  );
+  transition: all 0.5s;
+  transform: translateY(-10%);
+  outline: none;
 }
 .c:active {
   opacity: 0.79;
@@ -481,4 +508,12 @@ h1 {
   Button {
     margin: 15px !important;
   }
+}
+
+Button {
+  text-shadow: 0 0 3px #ea3cb9, 0 0 4px #ea3cb9, 0 0 6px #ea3cb9,
+    0 0 8px #ea3cb9;
+  border-color: #ea3cb9 !important;
+  color: #ea3cb9 !important;
+  letter-spacing: 0.2rem !important;
 }

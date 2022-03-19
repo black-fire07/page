@@ -8,8 +8,8 @@ export default function Home() {
       <div className="left">
         <h1>BABYAPE</h1>
         <p>
-          BabyApeCoin (BAPE) is a project, built around the idea that keeping it
-          simple is the quickest way to get your BAPE rocket to the moon.
+          BabyApeCoin (BAPE) Is a community based innovative project, people
+          will get APECOIN for free by just holding BABYAPE.
         </p>
         <div
           style={{

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
-import icon from "./ic.ico";
+import icon from "./logo7.jpg";
 import "./Navbar.scss";
 
 const Navbar = () => {
@@ -12,7 +12,7 @@ const Navbar = () => {
         <img
           src={icon}
           alt="logo"
-          style={{ height: "60px", borderRadius: "50%" }}
+          style={{ width: "60px", height: "60px", borderRadius: "50%" }}
         />
       </div>
       <ul className="app__navbar-links">
